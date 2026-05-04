@@ -1,0 +1,21 @@
+{
+  "goal": 5,
+  "actions": {
+    "increase": 1,
+    "decrease": -1
+  },
+  "rewards": [
+    {
+      "condition": "state == goal",
+      "value": 10
+    },
+    {
+      "condition": "state > goal",
+      "value": -5
+    },
+    {
+      "condition": "True",
+      "value": -1
+    }
+  ]
+}
